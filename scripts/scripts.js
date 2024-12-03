@@ -114,6 +114,8 @@ function isExternalImage(element, externalImageMarker) {
     const ext = getUrlExtension(element.getAttribute('href'));
     return ext && ['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(ext.toLowerCase());
   }
+
+  return false;
 }
 
 /*
@@ -229,6 +231,9 @@ function decorateExternalImages(ele, deliveryMarker) {
  */
 // eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
+
+  decorateExternalImages(main);
+
   // hopefully forward compatible button decoration
   decorateButtons(main);
   decorateIcons(main);
