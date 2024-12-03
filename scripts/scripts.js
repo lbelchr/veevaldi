@@ -6,7 +6,7 @@ import {
   decorateSections,
   decorateBlocks,
   decorateTemplateAndTheme,
-  createOptimizedPicture as libCreateOptimizedPIcture,
+  createOptimizedPicture as libCreateOptimizedPicture,
   waitForFirstImage,
   loadSection,
   loadSections,
