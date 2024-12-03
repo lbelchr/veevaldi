@@ -197,7 +197,7 @@ export function createOptimizedPicture(src, alt = '', eager = false, breakpoints
   * @example
   * decorateExternalImages(main, '//External Image//');
   */
-function decorateExternalImages(ele, deliveryMarker) {
+export function decorateExternalImages(ele, deliveryMarker) {
   const extImages = ele.querySelectorAll('a');
   extImages.forEach((extImage) => {
     if (isExternalImage(extImage, deliveryMarker)) {
